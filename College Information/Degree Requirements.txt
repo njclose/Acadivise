@@ -1,0 +1,11 @@
+- Majors, Minors, and Certificate Requirements -
+
+- Add a dash at the beginning of comments or organizational titles
+- Follow this format: Line(1):*Degree Name
+-		      Line(2):Class Number
+-		      Line(3):| 
+- Ex. Line(1):*Computer Science Major 
+-     Line(2):APPM 1360, MATH 2300
+-     Line(3):CSCI 1300
+-     Line(4):CSCI 2270
+-     Line(5):|

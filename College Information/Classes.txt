@@ -1,0 +1,5 @@
+- Classes: -
+
+- Surround comments or organizational titles with dashes
+- Follow this format: Class Number, Class Name, Credit Hours
+- Ex. APPM 1360, Calculus 2 for Engineers, 4
