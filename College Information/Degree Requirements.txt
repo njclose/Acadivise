@@ -2,7 +2,8 @@
 
 - Add a dash at the beginning of comments or organizational titles
 - Follow this format: Line(1):*Degree Name
--		      Line(2):Class Number
+-		      Line(2):Course Number
+-		      Line(3):Course Number, Alternate Course Number
 -		      Line(3):| 
 - Ex. Line(1):*Computer Science Major 
 -     Line(2):APPM 1360, MATH 2300
