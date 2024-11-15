@@ -1,6 +1,0 @@
-- Overlap -
-
-- Surround comments or organizational titles with dashes
-- Follow this format: Class Number 1 == Class Number 2
-- Ex. CSCI 2275 == CSCI 1300
-
