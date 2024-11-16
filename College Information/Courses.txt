@@ -1,5 +1,5 @@
 - Courses: -
 
 - Surround comments or organizational titles with dashes
-- Follow this format: Course Number, Course Name, Credit Hours
-- Ex. APPM 1360, Calculus 2 for Engineers, 4
+- Follow this format: Course Number, Credit Hours, Course Name
+- Ex. APPM 1360, 4, Calculus 2 for Engineers
