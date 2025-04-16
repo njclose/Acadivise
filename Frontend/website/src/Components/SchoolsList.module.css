@@ -1,0 +1,68 @@
+.schoolPage {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-right: 5%;
+  padding-left: 20%;
+}
+
+.schoolList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  overflow-y: auto;
+}
+
+.schoolButton {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.even {
+  background-color: #fcfcfc;
+}
+
+.odd {
+  background-color: #f2f2f2;
+}
+
+.schoolButton:hover {
+  background-color: #e6e6e6;
+}
+
+.schoolLogo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-right: 16px;
+}
+
+.schoolName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.searchBar {
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}

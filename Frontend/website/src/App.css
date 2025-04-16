@@ -1,25 +1,38 @@
+/* Makes Background of all Pages #FCFCFC */
+body {
+  background-color: #FCFCFC
+}
+
+/* Creates Padding for all Heading 1's */
 h1 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
+/* Creates Padding for all Paragraphs's */
 p {
   padding-left: 10px;
   padding-right: 10px;
 }
 
+/* Creates Style of the NavBar */
 .navbar {
+/* Makes the NavBar Always be on Top of the Page */
   position: sticky;
   top: 0;
   background-color: #222222;
   padding: 1.75rem;
+
+  /* Forces NavBar to Appear on a Higher Layer than Every Other Object */
   z-index: 1000;
 
+  /* Forces all NavBar Objects to be Vertically Centered */
   display: flex;
   align-items: center;
   height: 5px;
 }
 
+/* Imports Lato Fonts and Creates Classes to Use Them */
 @font-face {
   font-family: Lato_Bold;
   src: url('./Fonts/Lato/Lato-Bold.ttf');
@@ -36,36 +49,50 @@ p {
   font-family: Lato_Light, sans-serif;
 }
 
+/* Creates Style of the Normal Links on the NavBar */
 .routerLink{
-  color: white;
+  margin-right: 5px;
+  font-family: Lato_Bold, sans-serif;
+  color: #FCFCFC;
   padding: .75rem .75rem;
   border: none;
   text-decoration: none;
   font-size: 1rem;
   border-radius: 4.8px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
   margin-right: 5px;
   font-family: Lato_Bold, sans-serif;
+
+  /* Creates a Transition between the Non-Hovered Over and Hovered Over States */
+  transition: background-color 0.3s ease;
+
+  /* Sets the Cursur to a Pointer when Mouse is Over the Link */
+  cursor: pointer;
+}
+/* Makes the Link Change Color when Hovered Over */
+.routerLink:hover {
+  background-color: #01A7C2;
 }
 
+/* Creates Style of the Logo Link on the NavBar */
 .logoLink{
   padding: 0.35rem 0.35rem;
   border: none;
   border-radius: 4.8px;
-  cursor: pointer;
   margin-right: 5px;
-  transition: background-color 0.3s ease;
-}
 
-.routerLink:hover {
-  background-color: #01A7C2;
+  /* Creates a Transition between the Non-Hovered Over and Hovered Over States */
+  transition: background-color 0.3s ease;
+
+  /* Sets the Cursur to a Pointer when Mouse is Over the Link */
+  cursor: pointer;
 }
+/* Makes the Link Change Color when Hovered Over */
 .logoLink:hover {
   background-color: #01A7C2;
 }
 
-.logo{
+/* Forces Logo Size */
+.logo_textRightImage{
   width: 8rem;
   height: auto;
 }

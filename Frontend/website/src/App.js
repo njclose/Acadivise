@@ -1,28 +1,31 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css'; // Optional global styles
-import logo from './image_resources/acadivise_logo_textRightImage.png';
+import logo_textRightImage from './image_resources/acadivise_logo_textRightImage.png';
 
 // Page components
-import Home from './Pages/Home.js';
-import Schools from './Pages/Schools.js';
-import About from './Pages/About.js';
+import Home from './Pages/Home.jsx';
+import Schools from './Pages/Schools.jsx';
+import About_Us from './Pages/About_Us.jsx';
+import PopupBanner from './Components/PopupBanner.jsx';
 
 function App() {
   return (
     <Router>
+      <PopupBanner />
+
       <nav className="navbar">
         <Link to="/" className="logoLink">
-          <img src={logo} alt="Acadivise Logo" className="logo"></img>
+          <img src={logo_textRightImage} alt="Acadivise Logo" className="logo_textRightImage"></img>
         </Link>
         <Link to="/schools" className="routerLink">Schools</Link>
-        <Link to="/about" className="routerLink">About</Link>
+        <Link to="/about-us" className="routerLink">About Us</Link>
       </nav>
 
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/schools" component={Schools} />
-        <Route path="/about" component={About} />
+        <Route path="/about-us" component={About_Us} />
       </Switch>
     </Router>
   );
