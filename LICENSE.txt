@@ -1,4 +1,4 @@
-Copyright (c) [Year] [Your Name]
+Copyright (c) 2025 Nicholas Close
 
 This software is provided for educational demonstration purposes only.
 
