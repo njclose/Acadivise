@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   padding-right: 5%;
   padding-left: 20%;
@@ -12,14 +12,14 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
+  max-width: 80%;
   overflow-y: auto;
 }
 
 .schoolButton {
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 100px;
   padding: 0 20px;
   border: none;
   font-size: 1rem;
@@ -39,12 +39,12 @@
 }
 
 .schoolButton:hover {
-  background-color: #e6e6e6;
+  background-color: #CAF9F6;
 }
 
 .schoolLogo {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   margin-right: 16px;
 }

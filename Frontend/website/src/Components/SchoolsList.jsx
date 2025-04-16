@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import styles from './SchoolsList.module.css';
 
+//Imports for school images
+import cu_boulder_logo from '../image_resources/cu_boulder_logo.png';
+import cornell_logo from '../image_resources/Cornell_University_Logo.png';
+import university_of_wisconsin_stevens_point_logo from '../image_resources/UW_Stevens_Point_Logo.png';
+
 const schoolsData = [
-  { name: 'University of Colorado Boulder', logo: '../image_resources/cu_boulder_logo'},
-  { name: 'Stanford University', logo: 'logos/stanford.png' },
-  { name: 'MIT', logo: 'logos/mit.png' },
-  { name: 'UC Berkeley', logo: 'logos/berkeley.png' },
-  { name: 'Princeton University', logo: 'logos/princeton.png' },
-  { name: 'Yale University', logo: 'logos/yale.png' },
-  { name: 'Columbia University', logo: 'logos/columbia.png' },
-  { name: 'University of Chicago', logo: 'logos/uchicago.png' },
-  { name: 'University of Michigan', logo: 'logos/michigan.png' },
-  { name: 'Duke University', logo: 'logos/duke.png' }
+  { name: 'University of Colorado Boulder', logo: cu_boulder_logo },
+  { name: 'Cornell University', logo: cornell_logo },
+  { name: 'University of Wisconsin - Stevens Point', logo: university_of_wisconsin_stevens_point_logo },
 ];
 
 export default function SchoolsList() {
@@ -19,7 +17,8 @@ export default function SchoolsList() {
 
   const filteredSchools = schoolsData.filter(school =>
     school.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  )
+  .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div className={styles.schoolPage}>
