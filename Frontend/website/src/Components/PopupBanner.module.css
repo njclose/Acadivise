@@ -30,6 +30,7 @@
   
   /* Creates the style for the pre-release alert (current)/subscrition ad (future) */
   .subscriptionAd {
+    position: relative;
     background-color: #01A7C2;
     padding: 2rem;
     border-radius: 10px;
@@ -46,12 +47,6 @@
     color: #FCFCFC;
   }
   
-  .controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
   .linkBtn {
     background: none;
     border: none;
@@ -66,6 +61,9 @@
   }
   
   .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     background: #01A7C2;
     border: none;
     color: #FCFCFC;

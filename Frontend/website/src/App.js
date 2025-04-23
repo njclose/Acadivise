@@ -8,6 +8,7 @@ import Home from './Pages/Home.jsx';
 import Schools from './Pages/Schools.jsx';
 import About_Us from './Pages/About_Us.jsx';
 import PopupBanner from './Components/PopupBanner.jsx';
+import Audit from './Pages/Audit.jsx';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/schools" component={Schools} />
         <Route path="/about-us" component={About_Us} />
+        <Route path="/audit/:schoolName" component={Audit} />
       </Switch>
     </Router>
   );

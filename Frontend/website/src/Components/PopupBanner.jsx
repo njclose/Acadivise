@@ -32,15 +32,17 @@ export default function PopupBanner() {
   return (
     <div className={`${styles.overlay} ${closing ? styles.fadeOut : ''}`}>
       <div className={styles.subscriptionAd}>
+        <div>
+          <button className={`${styles.closeBtn} latoBold`} onClick={() => closePopup(false)}>X</button>
+        </div>
         <h2 className={`${styles.title} latoBold`}>🎓 Welcome to Acadivise! 🎓</h2>
         <p className={`${styles.message} latoLight`}>
-          As we are still in our pre-release phase, we would like to ask our users to make use of our degree feedback tool in the schools tab under your school. You may use this tool to directly notify us of class connections or entire sections of non-public data (such as core classes) we may be missing. Those who participate in this degree feedback (excluding site feedback) will be entered into a drawing for a permanent free premium account (only 500 spots availible). Please keep in mind any fake degree feedback will result in disquilification from the drawing. Also, feel free to make use of the feedback form in the About Us tab to suggest new site features. Happy degreeing!
+        As we continue refining our platform during the pre-release phase, we invite you to explore the Degree Feedback tool under your school in the Schools tab. This feature allows you to notify us of any missing class connections or non-public curriculum details—such as core requirements—that may not yet be reflected. Users who provide valid, degree-specific feedback (excluding general site suggestions) will be entered into a drawing for a lifetime premium account, with only 500 spots available. Please note that any false or misleading submissions will result in disqualification. You can also suggest new site features via the feedback form in the About Us tab. Thank you for supporting Acadivise as we work toward delivering a smarter, more complete degree audit experience.
         </p>
-        <div className={styles.controls}>
+        <div>
           <button className={`${styles.linkBtn} latoBold`} onClick={() => closePopup(true)}>
             Don't remind me again
           </button>
-          <button className={`${styles.closeBtn} latoBold`} onClick={() => closePopup(false)}>X</button>
         </div>
       </div>
     </div>

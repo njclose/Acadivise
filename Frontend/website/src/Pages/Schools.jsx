@@ -7,7 +7,6 @@ import SchoolsList from '../Components/SchoolsList';
 export default function Schools() {
   return (
     <div>
-      <h1>Schools:</h1>
       <SchoolsList />
     </div>
   );
